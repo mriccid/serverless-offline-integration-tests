@@ -1,0 +1,19 @@
+service: serverless-offline-automated-tests
+provider:
+  name: aws
+  runtime: nodejs8.10
+functions:
+  getUser:
+    handler: src/handler.getUser
+    events:
+      - http:
+          path: user/{id}
+          method: get
+  createUser:
+    handler: src/handler.createUser
+    events:
+      - http:
+          path: user/
+          method: post
+plugins:
+  - serverless-offline

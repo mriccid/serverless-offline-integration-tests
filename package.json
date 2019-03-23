@@ -1,0 +1,14 @@
+{
+  "name": "serverless-offline-automated-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Michael Ricci <mriccid@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.0.2",
+    "serverless": "^1.39.1",
+    "serverless-offline": "^4.9.2",
+    "supertest": "^4.0.2"
+  }
+}
