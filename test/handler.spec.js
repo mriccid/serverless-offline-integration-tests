@@ -2,6 +2,16 @@ const assert = require('assert');
 const request = require('supertest');
 
 const api = request('http://localhost:3000');
+const serverless = require('../src/serverless');
+
+before(async function () {
+	this.timeout(10000); // give it enough time to start
+	await serverless.start()
+});
+
+after(async function() {
+	await serverless.stop();
+})
 
 describe('User API', function() {
 

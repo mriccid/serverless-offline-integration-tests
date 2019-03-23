@@ -1,9 +1,13 @@
 {
-  "name": "serverless-offline-automated-tests",
+  "name": "serverless-offline-integration-tests",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Michael Ricci <mriccid@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "watch": "yarn serverless offline",
+    "test": "yarn mocha"
+  },
   "dependencies": {},
   "devDependencies": {
     "mocha": "^6.0.2",
